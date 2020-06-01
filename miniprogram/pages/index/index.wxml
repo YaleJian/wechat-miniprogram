@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-section page-section-spacing swiper">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item {{item}}"></view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="top">
+    <view class="func">外卖</view>
+    <view class="func">堂食</view>
+    <view class="func">超市</view>
+    <view class="func">口罩</view>
+  </view>
+  <view class="news">
+    <view class="title">评论</view>
+    <view class="item">外卖外卖外卖外卖外卖外卖外卖外卖外卖外卖外卖外卖外卖外卖</view>
+    <view class="item">堂食堂食堂食堂食堂食堂食堂食堂食堂食堂食堂食堂食堂食堂食堂食堂食堂食</view>
+    <view class="item">超市超市超市超市超市超市超市超市超市超市超市超市超市超市</view>
+    <view class="item">口罩口罩口罩口罩口罩口罩口罩口罩口罩口罩口罩口罩口罩口罩</view>
+  </view>
+  <view class="list">
+  </view>
+</view>
